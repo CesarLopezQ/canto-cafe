@@ -1,23 +1,21 @@
 .container {
-	width: 100%;
-	height: 100%;
-	background-color: #b68a1b;
-}
-
-.titleContainer {
+	width: 100vw;
+	height: auto;
 	background-image: url("/assets/coffee-field.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow-x: hidden;
 }
 
 .title {
 	margin: 2rem;
 	padding: 1rem 2rem;
 	border-radius: 1rem;
-	background-color: #fff8f0;
+	background-color: #402e32;
+	color: #d2925a;
 }
 
 .story {
@@ -38,6 +36,15 @@
 
 .follow {
 	background-color: #402e32;
+	color: #d2925a;
 	padding: 2rem;
 	border-radius: 1rem;
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+.instaContainer {
+	height: auto;
+	width: inherit;
+	background-color: #d2925a;
 }

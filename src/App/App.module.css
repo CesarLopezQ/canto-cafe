@@ -8,7 +8,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	width: 100%;
+	height: inherit;
+	width: inherit;
 	background-color: #2e2208;
 }

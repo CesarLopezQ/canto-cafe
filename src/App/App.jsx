@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import HomePage from "../HomePage/HomePage.jsx";
-import SplashScreen from "../Splash/SplashScreen.jsx";
+import HomePage from "@/HomePage/HomePage.jsx";
+import SplashScreen from "@/Splash/SplashScreen.jsx";
 import style from "./App.module.css";
 
 export default function App() {

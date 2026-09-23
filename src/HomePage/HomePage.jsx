@@ -1,5 +1,5 @@
 import style from "./HomePage.module.css";
-import Instagram from "../Instagram/Instagram";
+import Instagram from "@/Instagram/Instagram";
 
 export default function HomePage() {
 	return (

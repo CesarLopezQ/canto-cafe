@@ -1,7 +1,7 @@
 export default function SplashScreen() {
 	return (
 		<div>
-			<img src="/public/assets/logo-animated.gif" />
+			<img src={`${import.meta.env.BASE_URL}assets/logo-animated.gif`} />
 		</div>
 	);
 }

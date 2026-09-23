@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev
 export default defineConfig({
-	base: "/https://github.com/CesarLopezQ/canto-cafe/settings/pages/",
+	base: "/canto-cafe/",
 	plugins: [react()],
 	resolve: {
 		alias: {

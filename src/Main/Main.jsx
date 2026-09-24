@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import HomePage from "@/HomePage/HomePage.jsx";
 import SplashScreen from "@/Splash/SplashScreen.jsx";
-import style from "./App.module.css";
+import style from "./Main.module.css";
 
-export default function App() {
+export default function Main() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
@@ -21,8 +21,5 @@ export default function App() {
 				</div>
 			:	<HomePage />}
 		</div>
-		/*<div className={style.splash}>
-			<SplashScreen />
-		</div>*/
 	);
 }

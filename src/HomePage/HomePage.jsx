@@ -2,8 +2,8 @@ import style from "./HomePage.module.css";
 import Instagram from "@/Instagram/Instagram";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDown } from "@fortawesome/free-solid-svg-icons";
-import scrollDown from "@/Support Functions/scrollDown.js";
-import NavBar from "@/Nav Bar/NavBar.jsx";
+import scrollDown from "@/SupportFunctions/scrollDown.js";
+import NavBar from "@/NavBar/NavBar.jsx";
 
 export default function HomePage() {
 	return (

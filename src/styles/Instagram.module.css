@@ -1,0 +1,17 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.post {
+  width: min(100%, 550px);
+  display: flex;
+  justify-content: center;
+  zoom: 0.6;
+  padding-top: 1rem;
+}
+
+.post > div {
+  width: 100%;
+  max-width: 100%;
+}

@@ -9,5 +9,5 @@ declare const process: {
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS ? './' : '/',
+  base: process.env.GITHUB_ACTIONS ? 'canto-cafe' : '/',
 })

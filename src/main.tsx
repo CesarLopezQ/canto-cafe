@@ -10,7 +10,7 @@ import Sabor from './modules/Sabor'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<HomePage />} />

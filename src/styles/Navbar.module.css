@@ -24,15 +24,14 @@
 }
 
 .navElement:hover {
-  cursor: pointer;
   background-color: #888768;
   color: #402e32;
 }
 
 .active {
+  cursor: default;
   background-color: #888768;
   color: #402e32;
-  cursor: default;
 }
 
 .leftCorner {

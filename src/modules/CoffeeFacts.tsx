@@ -1,11 +1,11 @@
-import style from '../styles/CoffeeFacts.module.css'
+import '../styles/ModuleStyles.css'
 
 export default function CoffeeFacts() {
   return (
-    <div className={style.container}>
-      <h1 className={style.title}>Coffee Facts</h1>
-      <div className={style.textContainer}>
-        <h2 className={style.textBlock}>
+    <div className="container">
+      <h1 className="title">Coffee Facts</h1>
+      <div className="grid-container coffee-facts">
+        <h2 className="block">
           El cultivo de nuestra variedad se combina con árboles más altos que le
           brindan sombra. La sombra es un elemento necesario para la
           biodiversidad. De hecho, es el hogar perfecto para las más de 100
@@ -14,7 +14,7 @@ export default function CoffeeFacts() {
           el café más sofisticado y natural de México, reconocido mundialmente
           como un café de especialidad.
         </h2>
-        <h2 className={style.textBlock}>
+        <h2 className="block">
           El hecho de que el café sea sembrado bajo sombra crea microclimas en
           la región de Pluma. Su cercanía a la Costa cuya salinidad permea la
           tierra, aunado a un ciclo lunar y una posición geográfica especial, es

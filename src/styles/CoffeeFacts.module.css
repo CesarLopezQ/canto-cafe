@@ -19,9 +19,9 @@
   letter-spacing: 0.25rem;
 }
 
-.storyContainer {
+.textContainer {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding-bottom: 1rem;
   width: 90%;
@@ -31,17 +31,9 @@
   text-align: justify;
 }
 
-.storyBlock {
+.textBlock {
   border: 3px solid #402e32;
   border-radius: 1rem;
   background-color: #fff8f0;
   padding: 1rem;
-}
-
-.top {
-  grid-column: span 2;
-}
-
-.bottom {
-  grid-column: span 3;
 }

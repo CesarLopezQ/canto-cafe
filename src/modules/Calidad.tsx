@@ -44,7 +44,7 @@ export default function Calidad() {
           al consumidor una producción libre de fertilizantes y pesticidas
           químicos. Canto Café está comprometido en llevar a tu hogar un café
           fresco en grano tostado hecho en México con técnicas saludables que
-          cuidan tu salud y el ambiente.{' '}
+          cuidan tu salud y el ambiente.
         </h2>
       </div>
     </div>

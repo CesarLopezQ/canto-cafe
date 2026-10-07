@@ -3,15 +3,15 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #402e32;
-  color: #888768;
-  width: 80%;
-  height: 3.5rem;
   margin: 1rem 0 0 0;
   border-radius: 0.5rem;
+  background-color: #402e32;
+  width: 80%;
+  height: 3.5rem;
+  color: #888768;
   font-weight: bold;
-  font-family: 'Faustina', serif;
   font-size: 1.2rem;
+  font-family: 'Faustina', serif;
 }
 
 .navElement {
@@ -24,20 +24,21 @@
 }
 
 .navElement:hover {
+  cursor: pointer;
   background-color: #888768;
   color: #402e32;
-  cursor: pointer;
 }
 
-.leftCorner:hover {
+.active {
+  background-color: #888768;
+  color: #402e32;
+  cursor: default;
+}
+
+.leftCorner {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.rightCorner:hover {
+.rightCorner {
   border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.navElement svg {
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
 }

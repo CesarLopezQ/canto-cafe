@@ -2,11 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
-import App from './App'
 import HomePage from './modules/HomePage'
 import AppLayout from './modules/AppLayout'
 import Calidad from './modules/Calidad'
 import Sabor from './modules/Sabor'
+import FairTrade from './modules/FairTrade'
+import CoffeeFacts from './modules/CoffeeFacts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,8 +17,8 @@ createRoot(document.getElementById('root')!).render(
           <Route index element={<HomePage />} />
           <Route path="calidad" element={<Calidad />} />
           <Route path="sabor" element={<Sabor />} />
-          <Route path="fair-trade" element={<App />} />
-          <Route path="coffee-facts" element={<App />} />
+          <Route path="fair-trade" element={<FairTrade />} />
+          <Route path="coffee-facts" element={<CoffeeFacts />} />
         </Route>
       </Routes>
     </BrowserRouter>

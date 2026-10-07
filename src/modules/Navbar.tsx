@@ -1,30 +1,86 @@
 import whatsapp from '../utils/links/whatsapp.ts'
 import style from '../styles/Navbar.module.css'
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 
 export default function Navbar() {
   return (
     <div className={style.navContainer}>
-      <Link to="/" className={`${style.navElement} ${style.leftCorner}`}>
+      <NavLink
+        to="/"
+        className={({ isActive, isPending }) =>
+          [
+            style.navElement,
+            style.leftCorner,
+            isActive && style.active,
+            isPending && style.pending,
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         Home
-      </Link>
-      <Link to="/calidad" className={style.navElement}>
+      </NavLink>
+      <NavLink
+        to="/calidad"
+        className={({ isActive, isPending }) =>
+          [
+            style.navElement,
+            isActive && style.active,
+            isPending && style.pending,
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         Calidad
-      </Link>
-      <Link to="/sabor" className={style.navElement}>
+      </NavLink>
+      <NavLink
+        to="/sabor"
+        className={({ isActive, isPending }) =>
+          [
+            style.navElement,
+            isActive && style.active,
+            isPending && style.pending,
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         Sabor
-      </Link>
-      <Link to="/fair-trade" className={style.navElement}>
+      </NavLink>
+      <NavLink
+        to="/fair-trade"
+        className={({ isActive, isPending }) =>
+          [
+            style.navElement,
+            isActive && style.active,
+            isPending && style.pending,
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         Fair Trade
-      </Link>
-      <Link to="/coffee-facts" className={style.navElement}>
+      </NavLink>
+      <NavLink
+        to="/coffee-facts"
+        className={({ isActive, isPending }) =>
+          [
+            style.navElement,
+            isActive && style.active,
+            isPending && style.pending,
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         Coffee Facts
-      </Link>
+      </NavLink>
       <div
         className={`${style.navElement} ${style.rightCorner}`}
         onClick={whatsapp}
       >
-        <p>Realiza tu Pedido</p>
+        <p onClick={whatsapp}>Realiza tu Pedido</p>
       </div>
     </div>
   )

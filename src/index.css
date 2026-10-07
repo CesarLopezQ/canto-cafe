@@ -13,6 +13,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
+  line-height: 1.5;
   font-family:
     Inter,
     system-ui,
@@ -20,19 +21,18 @@ body {
     BlinkMacSystemFont,
     'Segoe UI',
     sans-serif;
-  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
-  font-family: 'Faustina';
   src: url('./assets/fonts/Faustina-VariableFont_wght.ttf');
+  font-family: 'Faustina';
 }
 
 @font-face {
-  font-family: 'Petit';
   src: url('./assets/fonts/PetitFormalScript-Regular.ttf');
+  font-family: 'Petit';
 }
 
 img,
@@ -71,6 +71,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
   font-weight: inherit;
+  font-size: inherit;
 }

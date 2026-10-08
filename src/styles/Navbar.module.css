@@ -41,3 +41,9 @@
 .rightCorner {
   border-radius: 0 0.5rem 0.5rem 0;
 }
+
+@media screen and (max-width: 1025px) {
+  .navContainer {
+    display: none;
+  }
+}

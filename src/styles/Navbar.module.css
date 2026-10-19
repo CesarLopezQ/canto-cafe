@@ -1,3 +1,13 @@
+.navShell {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navContainer .menuButton {
+  display: none;
+}
+
 .navContainer {
   display: flex;
   flex-direction: row;
@@ -23,7 +33,7 @@
   height: 100%;
 }
 
-.navElement:hover {
+.navElement:not(.menuButton):hover {
   background-color: #888768;
   color: #402e32;
 }
@@ -40,4 +50,104 @@
 
 .rightCorner {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.rightCorner:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  .navContainer .menuButton {
+    display: flex;
+  }
+
+  .navShell {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 4rem;
+  }
+
+  .navContainer {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    z-index: 2;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition:
+      height 350ms ease,
+      background-color 350ms ease,
+      box-shadow 350ms ease,
+      backdrop-filter 350ms ease;
+    margin: 0;
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 35%),
+      0 4px 16px rgb(64 46 50 / 12%);
+    border: 1px solid rgb(255 248 240 / 45%);
+    border-radius: 0.5rem;
+    background-color: rgb(255 248 240 / 22%);
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+  }
+
+  .navContainer.open {
+    height: 60vh;
+    height: 60dvh;
+  }
+
+  .navElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    background-color: #402e32;
+    width: 50%;
+    height: 3rem;
+    color: #888768;
+  }
+
+  .navContainer:not(.open) {
+    backdrop-filter: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    height: 4rem;
+  }
+
+  .navContainer:not(.open) > :not(.menuButton) {
+    transform: translateY(-0.75rem);
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      opacity 220ms ease,
+      transform 220ms ease,
+      visibility 0s linear 350ms;
+    pointer-events: none;
+  }
+
+  .navContainer.open > :not(.menuButton) {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    transition:
+      opacity 220ms ease,
+      transform 220ms ease,
+      visibility 0s;
+    pointer-events: auto;
+  }
+
+  .active {
+    cursor: default;
+    border-radius: 0.5rem;
+    background-color: #888768;
+    color: #402e32;
+  }
+
+  .menuButton {
+    flex: 0 0 3rem;
+  }
 }

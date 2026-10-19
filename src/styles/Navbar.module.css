@@ -52,6 +52,7 @@
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
+<<<<<<< HEAD
 .rightCorner:hover {
   cursor: pointer;
 }
@@ -149,5 +150,10 @@
 
   .menuButton {
     flex: 0 0 3rem;
+=======
+@media screen and (max-width: 1025px) {
+  .navContainer {
+    display: none;
+>>>>>>> e659ff5f45227eddf3666f260ececd9aec6ccb1f
   }
 }

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router'
 import { useState } from 'react'
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   function closeMenu() {
     setIsOpen(false)
   }
